@@ -1,0 +1,40 @@
+
+
+<html>
+    <head>
+        <title>Projeto 03/12</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+        <Script type="text/javascript">
+            function relogio() {
+                var data = new Date();
+                var horas = data.getHours();
+                var minutos = data.getMinutes();
+                var segundos = data.getSeconds();
+
+                if (horas < 10) {
+                    horas = "0" + horas;
+                }
+                if (minutos < 10) {
+                    minutos = "0" + minutos;
+                }
+                if (segundos < 10) {
+                    segundos = "0" + segundos;
+                }
+
+                document.getElementById("relogio").innerHTML = horas + ":" + minutos + ":" + segundos;
+            }
+
+            window.setInterval("relogio()", 1000);
+        </script>
+    </head>
+    <body onload="relogio()">
+        <header>
+            <div id="welcome"> 
+                Bem vindo ao Projeto 03/12!
+                <span id="relogio"></span>  
+            </div>
+        </header>
+    </body>
+</html>

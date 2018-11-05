@@ -1,0 +1,23 @@
+body{
+    background-image: url(fundo.jpeg);
+    
+}
+header{
+	
+        font: bold 38px fantasy;
+        background-color: rgba(255,153,255,0.5);
+}
+
+#relogio{
+        margin: -10px;
+        padding-right: 0px;
+        padding-left: 380px;
+        padding-top: 5px;
+        padding-bottom: 3px;
+}
+
+#welcome{
+	margin-top:-5px;
+	box-shadow:1px 1px 4px;
+
+}
